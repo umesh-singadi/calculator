@@ -19,11 +19,11 @@ const calcData = [
   { id: "zero", value: 0 },
   { id: "decimal", value: "." },
 ];
-function Keyboard({ setInput }) {
+function Keyboard({ handleInput }) {
   return (
     <div className="keys">
       {calcData.map((key) => (
-        <Key key={key.id} keyData={key} setInput={setInput} />
+        <Key key={key.id} keyData={key} handleInput={handleInput} />
       ))}
     </div>
   );

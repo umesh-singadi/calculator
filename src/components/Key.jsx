@@ -1,6 +1,6 @@
-function Key({ keyData: { id, value }, setInput }) {
+function Key({ keyData: { id, value }, handleInput }) {
   return (
-    <button id={id} onClick={() => setInput((pre) => pre + value)}>
+    <button id={id} onClick={() => handleInput(value)}>
       {value}
     </button>
   );
